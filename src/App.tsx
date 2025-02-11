@@ -1,14 +1,12 @@
+import { createBrowserRouter } from "react-router-dom";
 
+import { Home } from "./pages/home";
+import { Cart } from "./pages/cart";
 
-function App() {
+const router = createBrowserRouter([
+  {
+    
+  }
+])
 
-  return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
-  )
-}
-
-export default App
+export { router }
