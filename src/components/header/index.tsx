@@ -1,9 +1,18 @@
-
+import { Link } from "react-router-dom";
+import { FiShoppingCart } from "react-icons/fi";
 
 export function Header() {
     return (
-        <div>
-            <h1>Header Component</h1>
-        </div>
+        <header>
+            <nav>
+                <Link to={"/"}>
+                    Dev Shop
+                </Link>
+
+                <Link to={"/cart"}>
+                    <FiShoppingCart size={24} color="#121212"/>
+                </Link>
+            </nav>
+        </header>
     )
 }
