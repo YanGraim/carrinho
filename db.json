@@ -4,7 +4,7 @@
       "id": 1, 
       "title": "Airpods Apple, com Estojo de Recarga, Bluetooth", 
       "description": "Airpods Apple, com Estojo de Recarga, Bluetooth, Branco\nO Novo AirPods traz uma experiência nova em usar fones de ouvido sem fio. É só tirá-los do estojo e estão prontos para uso com seu iPhone, Apple Watch, iPad ou Mac. Ele oferece cinco horas de som e três horas para conversar com apenas uma carga. Eles acompanham seu ritmo graças ao estojo que proporciona várias cargas adicionais para mais de 24 horas de uso." ,
-      "price":120,
+      "price": 120,
       "cover": "https://i.imgur.com/uXrbyfA.jpg"
     },
     { 
@@ -41,6 +41,34 @@
       "description": "O smartwatch que oferece o mais completo conjunto de funções de monitoramento para o acompanhamento da Saúde e do Bem-Estar de uma maneira precisa e confiável. Possui os recursos essenciais e mais avançados para medir e acompanhar o estado da sua Saúde, funções como monitor de Batimento Cardíaco, Pressão Arterial, Eletrocardiograma, Oxímetro, Detecção de Queda e Chamada de Emergência, programa de Coaching do Sono para monitorar e melhorar a qualidade do seu Sono , além da Bioimpedância para avaliar a composição corporal de maneira rápida e interativa, e verificar a evolução os resultados dos exercícios refletidos no seu corpo. Possui uma série de funções avançadas de treinos com mais de 95 modalidades. ",
       "price": 1139.00,
       "cover": "https://i.imgur.com/Ua4bURp.jpg"
+    },
+    { 
+      "id": 7, 
+      "title": "Mouse Gamer Logitech G502 HERO", 
+      "description": "O mouse Logitech G502 HERO é equipado com o sensor óptico HERO 25K, garantindo precisão extrema com até 25.600 DPI. Conta com 11 botões programáveis e sistema de ajuste de peso para personalização completa. Iluminação RGB personalizável via software G HUB.",
+      "price": 249.99,
+      "cover": "https://imgs.search.brave.com/KH9tCcqFc31UwlRcYE9Fu49VwmH6UEguSyGKk4jIPyc/rs:fit:360:283:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMua2FidW0uY29t/LmJyL3Byb2R1dG9z/L2ZvdG9zLzk4MjQ0/L21vdXNlLWdhbWVy/LWxvZ2l0ZWNoLWc1/MDItaGVyby0xNmst/cmdiLWxpZ2h0c3lu/Yy0xMS1ib3RvZXMt/MTYwMDAtZHBpLTkx/MC0wMDU1NTBfMTYy/NjI5NzIwNl9vcmln/aW5hbC5qcGc"
+    },
+    { 
+      "id": 8, 
+      "title": "Cadeira Gamer ThunderX3 TGC12", 
+      "description": "A cadeira gamer ThunderX3 TGC12 proporciona conforto extremo para longas sessões de jogo. Feita com revestimento premium em couro sintético, possui ajustes de inclinação e altura, além de almofadas para lombar e pescoço. Suporta até 150 kg.",
+      "price": 899.99,
+      "cover": "https://imgs.search.brave.com/mgvPDB-jQkTVpnfcPL-sJ4pTdMXTcUgiJjgQDpjkdl8/rs:fit:360:283:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFWcWpQbE9KQUwu/anBn"
+    },
+    { 
+      "id": 9, 
+      "title": "Placa de Vídeo RTX 3060 Ti 8GB", 
+      "description": "A RTX 3060 Ti é a escolha ideal para gamers que buscam alto desempenho em jogos com Ray Tracing e DLSS. Com 8GB de memória GDDR6, oferece uma experiência fluida em 1440p e excelente custo-benefício para os entusiastas do PC gaming.",
+      "price": 2399.99,
+      "cover": "https://imgs.search.brave.com/1mG0zPmm_U6Ml1fr-zFgPIycZQktYf9HGFo7CMOMdCE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9kbGNk/bndlYmltZ3MuYXN1/cy5jb20vZ2Fpbi9h/ZGFlMDViMi0xZmNm/LTRmMjAtOGRhNy0x/MjVkM2E5NTk4YTcv/dzY5Mg.jpeg"
+    },
+    { 
+      "id": 10, 
+      "title": "Controle Xbox Series X|S sem fio", 
+      "description": "O novo controle sem fio do Xbox Series X|S conta com um design ergonômico e aderência texturizada para maior conforto. Compatível com Xbox One, Windows 10 e dispositivos móveis via Bluetooth, oferece latência reduzida e conexão estável para uma jogabilidade fluida.",
+      "price": 349.99,
+      "cover": "https://imgs.search.brave.com/CDxH-YGdrSXuVjTkn3va5wpy_OuB-c12adJMv47c3jU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9taXJh/bmRhY29tcHV0YWNh/by5qZXRhc3NldHMu/Y29tLmJyL3Byb2R1/dG8vNDQzNzgtcHJp/bmNpcGFsLnBuZw"
     }
   ]
 }
