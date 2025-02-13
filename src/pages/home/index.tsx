@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { api } from "../../services/api";
+import { CartContext } from "../../contexts/CartContext";
 
 import { BsCartPlus } from "react-icons/bs";
 
@@ -12,6 +13,7 @@ export interface ProductProps{
 }
 
 export function Home() {
+    const {addItemCart} = useContext(CartContext);
     const [products, setProducts] = useState<ProductProps[]>([]);
 
     useEffect(() => {
@@ -24,7 +26,7 @@ export function Home() {
     }, [])
 
     function handleAddCart(product: ProductProps) {
-        console.log(product)
+        addItemCart(product);
     }
     
     return (
@@ -33,9 +35,9 @@ export function Home() {
                 <h1 className="font-bold text-3xl mb-4 mt-10 text-center">Produtos em alta</h1>
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-5">
                     {products.map((product) => (
-                        <section className="w-full mb-10" key={product.id}>
+                        <section className="w-full mb-10 flex flex-col justify-center" key={product.id}>
                             <img className="w-full rounded-lg max-h-70 mb-2" src={product.cover}  alt={product.title}/>
-                            <p className="font-medium mt-1 mb-2">{product.title}</p>
+                            <p className="font-medium mt-2 mb-3">{product.title}</p>
                             <div className="flex gap-3 items-center">
                                 <strong className="text-zinc-700/90">
                                     {product.price.toLocaleString("pt-BR", {

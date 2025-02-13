@@ -4,6 +4,7 @@ import { ProductProps } from "../pages/home";
 interface CartContextData {
     cart: CartProps[];
     cartAmount: number;
+    addItemCart: (newItem: ProductProps) => void; 
 }
 
 interface CartProps {
@@ -46,7 +47,7 @@ function CartProvider({children}: CartProviderProps) {
     }
 
     return (
-        <CartContext.Provider value={{cart, cartAmount: cart.length}}>
+        <CartContext.Provider value={{cart, cartAmount: cart.length, addItemCart}}>
             {children}
         </CartContext.Provider>
     )
