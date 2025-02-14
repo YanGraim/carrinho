@@ -57,6 +57,14 @@ function CartProvider({children}: CartProviderProps) {
         setCart(removeItem);
     }
 
+    function totalResultCart(items: CartProps[]) {
+        const myCart = items;
+        const result = myCart.reduce((acc, obj) => {return acc + obj.total}, 0);
+        const resultFormated = result.toLocaleString("pt-BR", {style: "currency", currency: "BRL"});
+        return resultFormated;
+
+    } 
+
     return (
         <CartContext.Provider value={{cart, cartAmount: cart.length, addItemCart}}>
             {children}
