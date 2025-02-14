@@ -33,7 +33,7 @@ export function Home() {
         <div>
             <main className="w-full max-w-7xl px-4 mx-auto">
                 <h1 className="font-bold text-3xl mb-4 mt-10 text-center">Produtos em alta</h1>
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-5">
+                <div className="w-full grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-5">
                     {products.map((product) => (
                         <section className="w-full mb-10 flex flex-col justify-center" key={product.id}>
                             <img className="w-full rounded-lg max-h-70 mb-2" src={product.cover}  alt={product.title}/>
