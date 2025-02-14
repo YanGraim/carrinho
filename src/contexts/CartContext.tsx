@@ -46,6 +46,17 @@ function CartProvider({children}: CartProviderProps) {
         setCart(products => [...products, data])
     }
 
+    function removeItemCart(product: CartProps) {
+        const indexItem = cart.findIndex(item => item.id === product.id);
+
+        if(indexItem > 1) {
+            // diminui o amount
+        }
+
+        const removeItem = cart.filter(item => item.id !== product.id);
+        setCart(removeItem);
+    }
+
     return (
         <CartContext.Provider value={{cart, cartAmount: cart.length, addItemCart}}>
             {children}
