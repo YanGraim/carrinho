@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { api } from "../../services/api";
 import { ProductProps } from "../home";
 import { BsCartPlus } from "react-icons/bs";
@@ -12,6 +12,7 @@ export function Product() {
     const {id} = useParams(); 
     const [product, setProduct] = useState<ProductProps>();
     const { addItemCart } = useContext(CartContext);
+    const navigate = useNavigate();
 
     useEffect(() => {
         async function getProducts() {
@@ -31,7 +32,10 @@ export function Product() {
             }
         })
         addItemCart(product);
+        navigate("/cart");
     }
+
+
     return (
         <div>
             <main className="w-full max-w-7xl px-4 mx-auto my-6">
