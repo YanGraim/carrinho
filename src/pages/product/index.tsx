@@ -1,14 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { api } from "../../services/api";
 import { ProductProps } from "../home";
 import { BsCartPlus } from "react-icons/bs";
+import { CartContext } from "../../contexts/CartContext"; 
 
 
 
 export function Product() {
     const {id} = useParams(); 
     const [product, setProduct] = useState<ProductProps>();
+    const { addItemCart } = useContext(CartContext);
 
     useEffect(() => {
         async function getProducts() {
@@ -18,6 +20,10 @@ export function Product() {
 
         getProducts();
     }, [id])
+
+    function handleAddItem(product: ProductProps) {
+        addItemCart(product);
+    }
     return (
         <div>
             <main className="w-full max-w-7xl px-4 mx-auto my-6">
@@ -33,7 +39,7 @@ export function Product() {
                                     style: "currency",
                                     currency: "BRL"
                                 })}
-                                <button className="bg-zinc-900 p-1 rounded ml-2">
+                                <button className="bg-zinc-900 p-1 rounded ml-2" onClick={() => handleAddItem(product)}>
                                     <BsCartPlus size={20} color="#fff"/>
 
                                 </button>
